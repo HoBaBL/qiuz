@@ -3,17 +3,17 @@ const mas = [
         question: 'Как называется город, который стал  столицей России в эпоху Петра I?',
         answer: [
             {
-                id: '1',
+                id: `${Math.random()}`,
                 value: 'Санкт-Петербург',
                 correct: true,
             },
             {
-                id: '2',
+                id: `${Math.random()}`,
                 value: 'Москва',
                 correct: false,
             },
             {
-                id: '3',
+                id: `${Math.random()}`,
                 value: 'Киев',
                 correct: false,
             }
@@ -23,17 +23,17 @@ const mas = [
         question: 'Кем был А.В. Суворов?',
         answer: [
             {
-                id: '4',
+                id: `${Math.random()}`,
                 value: 'Художник',
                 correct: false,
             },
             {
-                id: '5',
+                id: `${Math.random()}`,
                 value: 'Полководец',
                 correct: true,
             },
             {
-                id: '6',
+                id: `${Math.random()}`,
                 value: 'Учёный',
                 correct: false,
             }
@@ -43,17 +43,17 @@ const mas = [
         question: 'При каком правителе в состав Россиийской Империи вошел  Крымский полуостров?',
         answer: [
             {
-                id: '7',
+                id: `${Math.random()}`,
                 value: 'Екатерина II',
                 correct: true,
             },
             {
-                id: '8',
+                id: `${Math.random()}`,
                 value: 'Иван Грозный',
                 correct: false,
             },
             {
-                id: '9',
+                id: `${Math.random()}`,
                 value: 'Павел I',
                 correct: false,
             }
@@ -63,17 +63,17 @@ const mas = [
         question: 'Какая династия начала править в России с 1613 года?',
         answer: [
             {
-                id: '10',
+                id: `${Math.random()}`,
                 value: 'Годуновых',
                 correct: false,
             },
             {
-                id: '11',
+                id: `${Math.random()}`,
                 value: 'Пожарских',
                 correct: false,
             },
             {
-                id: '12',
+                id: `${Math.random()}`,
                 value: 'Романовых',
                 correct: true,
             }
@@ -83,17 +83,17 @@ const mas = [
         question: 'От какого государства попала в зависимость Русь в ХIII веке?',
         answer: [
             {
-                id: '13',
+                id: `${Math.random()}`,
                 value: 'от Речи Посполитой',
                 correct: false,
             },
             {
-                id: '14',
+                id: `${Math.random()}`,
                 value: 'от Золотой Орды',
                 correct: true,
             },
             {
-                id: '15',
+                id: `${Math.random()}`,
                 value: 'от Османской Империи',
                 correct: false,
             }
@@ -103,17 +103,17 @@ const mas = [
         question: 'Когда Русь приняла христианство?',
         answer: [
             {
-                id: '16',
+                id: `${Math.random()}`,
                 value: '988',
                 correct: true,
             },
             {
-                id: '17',
+                id: `${Math.random()}`,
                 value: '866',
                 correct: false,
             },
             {
-                id: '18',
+                id: `${Math.random()}`,
                 value: '1233',
                 correct: false,
             }
@@ -123,17 +123,17 @@ const mas = [
         question: 'Вокруг какого торгового пути возникли первые княжества?',
         answer: [
             {
-                id: '10',
+                id: `${Math.random()}`,
                 value: 'Великий шелковый путь',
                 correct: false,
             },
             {
-                id: '11',
+                id: `${Math.random()}`,
                 value: 'Путь благовоний',
                 correct: false,
             },
             {
-                id: '12',
+                id: `${Math.random()}`,
                 value: 'Из варяг в греки',
                 correct: true,
             }
@@ -143,17 +143,17 @@ const mas = [
         question: 'Просьба о помощи какого из правителей соседних земель, привела русских князей в битву на Калке 31 мая 1223 года?',
         answer: [
             {
-                id: '13',
+                id: `${Math.random()}`,
                 value: 'Котян Сутоевич хан Половцев',
                 correct: true,
             },
             {
-                id: '14',
+                id: `${Math.random()}`,
                 value: 'Бела IV Король Венгрии',
                 correct: false,
             },
             {
-                id: '15',
+                id: `${Math.random()}`,
                 value: 'Куря хан Печенегов',
                 correct: false,
             }
@@ -163,17 +163,17 @@ const mas = [
         question: 'Как звали  последнего российского императора?',
         answer: [
             {
-                id: '16',
+                id: `${Math.random()}`,
                 value: 'Николай II',
                 correct: true,
             },
             {
-                id: '17',
+                id: `${Math.random()}`,
                 value: 'Александр I',
                 correct: false,
             },
             {
-                id: '18',
+                id: `${Math.random()}`,
                 value: 'Пётр III',
                 correct: false,
             }
@@ -183,17 +183,17 @@ const mas = [
         question: 'Дата прихода большевиков к власти',
         answer: [
             {
-                id: '16',
+                id: `${Math.random()}`,
                 value: 'январь 1905',
                 correct: false,
             },
             {
-                id: '17',
+                id: `${Math.random()}`,
                 value: '8 мар 1917 г.',
                 correct: false,
             },
             {
-                id: '18',
+                id: `${Math.random()}`,
                 value: '25 октября 1917 г',
                 correct: true,
             }
@@ -208,7 +208,7 @@ let point = document.querySelector('.point');
 let resultVivod = document.querySelector('.result');
 let ballVivod = document.querySelector('.ball-vivod')
 let localSave = {};
-let ball = 10;
+let ball = mas.length;
 let i = 0;
 
 function renderQestion(index) {
